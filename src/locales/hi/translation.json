@@ -1,0 +1,37 @@
+{
+  "appTitle": "पुलिस स्टेशन प्रबंधन प्रणाली",
+  "sidebar": {
+    "appTitle": "पुलिस स्टेशन",
+    "settings": "सेटिंग्स",
+    "logout": "लॉगआउट",
+    "home": "होम",
+    "crimes": "अपराध",
+    "applications": "आवेदन",
+    "accidentalDeaths": "दुर्घटना मृत्यु",
+    "missingPersons": "लापता व्यक्ति",
+    "missingProperty": "लापता संपत्ति",
+    "preventiveMeasure": "निवारक उपाय",
+    "summonsWarrants": "समन / वारंट",
+    "ncComplaints": "एनसी शिकायतें",
+    "officerManagement": "अधिकारी प्रबंधन",
+    "entityManagement": "संस्था प्रबंधन"
+  },
+  "dashboard": {
+    "totalCrimes": "कुल अपराध",
+    "applications": "आवेदन",
+    "missingPersons": "लापता व्यक्ति",
+    "preventiveActions": "निवारक कार्रवाई",
+    "accidentalDeaths": "दुर्घटना मृत्यु",
+    "ncCases": "गैर-संज्ञेय",
+    "seizedProperty": "जब्त संपत्ति",
+    "summons": "समन / वारंट",
+    "officers": "अधिकारी"
+  },
+  "crime": {
+    "section": "धारा",
+    "reported": "रिपोर्ट किया गया",
+    "registered": "पंजीकृत",
+    "pending": "लंबित",
+    "solved": "सुलझाया गया"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "appTitle": "पोलीस स्टेशन व्यवस्थापन प्रणाली",
+  "sidebar": {
+    "appTitle": "पोलीस स्टेशन",
+    "settings": "सेटिंग्ज",
+    "logout": "बाहेर पडा",
+    "home": "मुख्यपृष्ठ",
+    "crimes": "गुन्हे",
+    "applications": "अर्ज",
+    "accidentalDeaths": "अपघाती मृत्यू",
+    "missingPersons": "बेपत्ता व्यक्ती",
+    "missingProperty": "हरवलेली मालमत्ता",
+    "preventiveMeasure": "प्रतिबंधात्मक उपाय",
+    "summonsWarrants": "समन्स / वॉरंट",
+    "ncComplaints": "एनसी तक्रारी",
+    "officerManagement": "अधिकारी व्यवस्थापन",
+    "entityManagement": "घटक व्यवस्थापन"
+  },
+  "dashboard": {
+    "totalCrimes": "एकूण गुन्हे",
+    "applications": "अर्ज",
+    "missingPersons": "बेपत्ता व्यक्ती",
+    "preventiveActions": "प्रतिबंधात्मक कारवाई",
+    "accidentalDeaths": "अपघाती मृत्यू",
+    "ncCases": "नॉन-कॉग्निझेबल",
+    "seizedProperty": "जप्त मालमत्ता",
+    "summons": "समन्स / वॉरंट",
+    "officers": "अधिकारी"
+  },
+  "crime": {
+    "section": "कलम",
+    "reported": "नोंदवलेले",
+    "registered": "नोंदणीकृत",
+    "pending": "प्रलंबित",
+    "solved": "सोडवलेले"
+  },
+  "settings": {
+    "title": "सेटिंग्ज",
+    "sidebar": {
+      "profile": "प्रोफाइल", 
+      "security": "सुरक्षा",
+      "preferences": "प्राथमिकता",
+      "session": "सत्र",
+      "supportFeedback": "समर्थन फळन"
+    },
+    "profile": {
+      "title": "प्रोफाइल",
+      "description": "तुमची वैयक्तिक आणि कार्यालयीन माहिती तपासा आणि अपडेट करा",
+      "changeProfilePhoto": "प्रोफाइल चित्र बदला",
+      "name": "नाव",
+      "email": "ईमेल",
+      "mobileNumber": "मोबाइल नंबर", 
+      "designation": "पदवी",
+      "stationName": "स्टेशन नाव",
+      "zoneName": "जोन नाव",
+      "address": "पत्ता",
+      "districtName": "जिल्हा नाव",
+      "cityName": "शहर नाव",
+      "stateName": "राज्य नाव",
+      "pincode": "पिन कोड",
+      "gender": "लिंग",
+      "zoneCode": "जोन कोड",
+      "role": "Role",
+      "updateProfile": "प्रोफाइल संपादित करा",
+      "cancel": "रद्द करा",
+      "save": "संग्रहित करा"
+    },
+    "security": {
+      "title": "सुरक्षा",
+      "description": "तुमची सुरक्षा तपासा आणि अपडेट करा",
+      "password": "पासवर्ड",
+      "currentPassword": "वर्तमान पासवर्ड", 
+      "newPassword": "नवीन पासवर्ड",
+      "confirmPassword": "पासवर्ड पुष्टी करा",
+      "changePassword": "पासवर्ड बदला",
+      "showPassword": "पासवर्ड दाखवा",
+      "hidePassword": "पासवर्ड लपवा",
+      "lastLogin": "शेवटचे लॉगिन",
+      "loginHistory": "लॉग इन इतिहास",
+      "currentSession": "वर्तमान सत्र",
+      "totalLogin": "एकूण लॉग इन",
+      "noLoginHistory": "लॉग इन इतिहास आहे नाही",
+      "recentLogin": "अंतिम लॉग इन"
+    },
+    "preferences": {
+      "title": "प्राथमिकता",
+      "description": "तुमची प्राथमिकता तपासा आणि अपडेट करा",
+      "language": "भाषा",
+      "theme": "थीम",
+      "notifications": "सूचना",
+      "emailNotification": "ईमेल सूचना",
+      "smsNotification": "SMS सूचना",
+      "notificationSettings": "सूचना सेटिंग्ज"
+    },
+    "session": {
+      "title": "सत्र",
+      "description": "तुमच्या सक्रिय सत्रांची तपासा आणि अपडेट करा",
+      "mySessions": "माझे सत्र",
+      "allSessions": "सर्व सत्र", 
+      "terminateSession": "सत्र बंद करा",
+      "table": {
+        "device": "डिव्हाइस",
+        "location": "स्थान",
+        "user": "वापरकर्ता",
+        "ipAddress": "IP पत्ता",
+        "loginTime": "लॉग इन वेळ",
+        "lastActiveTime": "अंतिम सक्रिय वेळ",
+        "status": "स्थिती",
+        "action": "कार्य",
+        "activeSession": "सक्रिय सत्र",
+        "inactiveSession": "असक्रिय सत्र",
+        "terminateSession": "सत्र बंद करा"
+      }
+    },
+    "supportFeedback": {
+      "title": "समर्थन फळन",
+      "description": "तुमची समर्थन फळन तपासा आणि अपडेट करा",
+      "subject": "विषय",
+      "subjectPlaceholder": "आपला विषय प्रविष्ट करा",
+      "descriptionPlaceholder": "आपली विवरण प्रविष्ट करा",
+      "submit": "प्रस्तुत करा",
+      "submitLoading": "प्रस्तुत करत आहे...",
+      "previousTickets": "अधिक फळन",
+      "previousTicketsDescription": "आपल्या अधिक समर्थन फळन तपासा आणि अपडेट करा",
+      "table": {
+        "number": "नंबर",
+        "subject": "विषय",
+        "description": "विवरण", 
+        "status": "स्थिती",
+        "date": "दिनांक",
+        "response": "उत्तर"
+      },
+      "noPreviousTickets": "अधिक फळन आहे नाही"
+    },
+    "copyright": "© 2025 पोलीस स्टेशन व्यवस्थापन प्रणाली. सर्व अधिकार संरक्षित."
+}
+}
