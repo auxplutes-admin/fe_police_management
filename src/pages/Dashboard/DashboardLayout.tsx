@@ -41,56 +41,62 @@ export default function DashboardLayout() {
     { 
       label: t("sidebar.crimes"), 
       icon: <FileText className="w-5 h-5" />, 
-      route: "/dashboard/crime", 
+      route: "/dashboard/crime-dashboard", 
       roles: ["superadmin", "admin", "officer", "officer_crime"] 
     },
     { 
       label: t("sidebar.applications"), 
       icon: <FileText className="w-5 h-5" />, 
-      route: "/dashboard/applications", 
+      route: "/dashboard/application-dashboard", 
       roles: ["superadmin", "admin", "officer", "officer_application"] 
     },
     { 
       label: t("sidebar.accidentalDeaths"), 
       icon: <AlertCircle className="w-5 h-5" />, 
-      route: "/dashboard/accidental-deaths", 
+      route: "/dashboard/accidental-deaths-dashboard", 
       roles: ["superadmin", "admin", "officer", "officer_accidental_deaths"] 
     },
     { 
       label: t("sidebar.missingPersons"), 
       icon: <Users className="w-5 h-5" />, 
-      route: "/dashboard/missing-person", 
+      route: "/dashboard/missing-person-dashboard", 
       roles: ["superadmin", "admin", "officer", "officer_missing_person"] 
     },
     { 
       label: t("sidebar.missingProperty"), 
       icon: <Building2 className="w-5 h-5" />, 
-      route: "/dashboard/missing-property", 
+      route: "/dashboard/missing-property-dashboard", 
       roles: ["superadmin", "admin", "officer", "officer_missing_property"] 
     },
     { 
       label: t("sidebar.preventiveMeasure"), 
       icon: <Shield className="w-5 h-5" />, 
-      route: "/dashboard/preventive-measures", 
+      route: "/dashboard/preventive-measures-dashboard", 
       roles: ["superadmin", "admin", "officer", "officer_preventive_measures"] 
     },
     { 
       label: t("sidebar.summonsWarrants"), 
       icon: <FileBarChart className="w-5 h-5" />, 
-      route: "/dashboard/summon-warrant", 
+      route: "/dashboard/summon-warrant-dashboard", 
       roles: ["superadmin", "admin", "officer", "officer_summon_warrant"] 
     },
     { 
       label: t("sidebar.ncComplaints"), 
       icon: <FileText className="w-5 h-5" />, 
-      route: "/dashboard/non-cognizable", 
+      route: "/dashboard/non-cognizable-dashboard", 
       roles: ["superadmin", "admin", "officer", "officer_non_cognizable"] 
     },
     { 
       label: t("sidebar.officerManagement"), 
       icon: <UserCog className="w-5 h-5" />, 
-      route: "/dashboard/manage-officers", 
+      route: "/dashboard/officer-dashboard", 
       roles: ["superadmin", "admin", "officer", "officer_manage_officers"] 
+    },
+    { 
+      label: t("sidebar.dataRules"), 
+      icon: <FileText className="w-5 h-5" />, 
+      route: "/dashboard/data-rules", 
+      roles: ["superadmin", "admin", "officer", "officer_data_rules"] 
     },
   ];
 
@@ -99,7 +105,7 @@ export default function DashboardLayout() {
   }
 
   return (
-    <div className="flex h-screen bg-gray-50">
+    <div className="flex h-screen bg-gray-50 fixed inset-0">
       {/* Mobile Sidebar Toggle */}
       <Button
         variant="outline"
@@ -110,16 +116,16 @@ export default function DashboardLayout() {
         {isSidebarOpen ? <X className="w-4 h-4" /> : <AlignJustify className="w-4 h-4" />}
       </Button>
 
-      {/* Sidebar */}
+      {/* Main Sidebar */}
       <div className={`${isCollapsed ? 'w-16' : 'w-64'} bg-white border-r border-gray-200 flex flex-col fixed inset-y-0 left-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:relative md:translate-x-0 transition-all duration-300 ease-in-out z-30 shadow-lg`}>
         
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
           {!isCollapsed && (
             <div className="flex items-center space-x-2">
-              <Avatar className={`w-8 h-8 bg-${randomColor}-500`}>
+              {/* <Avatar className={`w-8 h-8 bg-${randomColor}-500`}>
                 <AvatarFallback>T</AvatarFallback>
-              </Avatar>
+              </Avatar> */}
               <h1 className="text-xl font-bold text-gray-800">AUXPSM</h1>
             </div>
           )}
@@ -135,7 +141,7 @@ export default function DashboardLayout() {
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 p-2 space-y-2">
+        <nav className="flex-1 p-2 space-y-2 overflow-hidden">
           <TooltipProvider>
             {navItems.map((item, index) => {
               const Icon = item.icon
@@ -304,7 +310,7 @@ export default function DashboardLayout() {
 
         {/* Page Content */}
         <main className="flex-1 overflow-auto bg-gray-50">
-          <div className="">
+          <div className="overflow-y-auto">
             <Outlet />
           </div>
         </main>

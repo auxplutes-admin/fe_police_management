@@ -25,3 +25,17 @@ export interface LoginResponse {
   export interface LogoutRequest {
     userId: string;
   }
+
+  export interface OfficerSession {
+    session_id: string;
+    officer_email: string;
+    ip_address: string;
+    device_info?: any;
+    latitude?: number;
+    longitude?: number;
+    session_metadata?: any;
+    login_time: string;
+    last_active_time: string;
+    logout_time?: string;
+    is_active: boolean;
+  }

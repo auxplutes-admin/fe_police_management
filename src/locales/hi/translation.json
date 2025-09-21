@@ -13,8 +13,8 @@
     "preventiveMeasure": "निवारक उपाय",
     "summonsWarrants": "समन / वारंट",
     "ncComplaints": "एनसी शिकायतें",
-    "officerManagement": "अधिकारी प्रबंधन",
-    "entityManagement": "संस्था प्रबंधन"
+    "officerManagement": "अधिकारी प्रबंधन",  
+    "dataRules": "डेटा नियम"
   },
   "dashboard": {
     "totalCrimes": "कुल अपराध",

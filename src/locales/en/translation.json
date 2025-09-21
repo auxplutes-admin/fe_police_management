@@ -14,7 +14,7 @@
       "summonsWarrants": "Summons / Warrants",
       "ncComplaints": "NC Complaints",
       "officerManagement": "Officer Management", 
-      "entityManagement": "Entity Management"
+      "dataRules": "Data Rules"
     },
     "dashboard": {
       "title": "Dashboard",
